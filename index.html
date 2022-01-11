@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/cube.css" />
+  <link rel="stylesheet" href="stylesheets/axes.css" />
+  <link rel="stylesheet" href="stylesheets/controls.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Outcrop 360˚ View</title>
+</head>
+
+<body>
+  <div class="perspective drag-area">
+    <div class="camera">
+      <div class="rotate">
+        <div class="cube">
+          <div class="side front">
+            <div class="side left">
+              <div class="side top"></div>
+              <div class="side bottom"></div>
+              <div class="side back">
+                <div class="side right">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="axes">
+    <div class="rotate">
+      <div class="axis main-axis red-axis">
+        <div class="axis perpendicular-axis red-axis"></div>
+      </div>
+      <div class="axis main-axis green-axis">
+        <div class="axis perpendicular-axis green-axis"></div>
+      </div>
+      <div class="axis main-axis blue-axis">
+        <div class="axis perpendicular-axis blue-axis"></div>
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+    <img class="input-show-borders" src="images/cube.svg">
+    <img class="input-show-grid" src="images/globe.svg">
+    <div class="zoom">
+      <input class="input-zoom" type="range" min="-800" max="800" value="800">
+    </div>
+  </div>
+  <script src="scripts/controls.js"></script>
+  <script src="scripts/rotate.js"></script>
+</body>
+</html>
